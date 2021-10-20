@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kratinprototype.master.cs" Inherits="Prototype1.kratinprototype" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1600px;
+        }
+    </style>
+    <div class="page-container">
+  <div class="top-contant">
+      <div class="header_top">
+    <div class="row">
+       <div class="col-sm-6">
+           <img src="images/istockphoto-660654876-612x612.jpg" style="border-color:blue;" height="400" border="50" class="auto-style1"  />
+       </div>
+       <div class="col-sm-6">
+       </div>
+        </div>
+  </div>
+ </div>
+ </div>  
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         
+    </asp:ContentPlaceHolder>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/basictable.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/jqcandlestick.css" rel="stylesheet" />
+    <link href="css/icon-font.min.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/monthly.css" rel="stylesheet" />
+    <link href="css/morris.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/table-style.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.basictable.min.js"></script>
+    <script src="js/jquery.jqcandlestick.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/monthly.js"></script>
+    <script src="js/morris.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body style="background-color:lightgoldenrodyellow">
+    <form id="form1" runat="server">
+ 
+        <div>
+            <asp:Label ID="Label1" runat="server" Width="500px" Height="50px" style="color:darkorchid;font-weight:bolder" Text="Kratin Health Care" Font-Bold="True" Font-Size="XX-Large">
+
+                
+            </asp:Label>
+             
+       </div>
+       <div>
+           <asp:Menu runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="Blue" StaticSubMenuIndent="10px" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Orientation="Vertical" >
+               <DynamicHoverStyle BackColor="Lime" ForeColor="White"></DynamicHoverStyle>
+
+               <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></DynamicMenuItemStyle>
+
+               <DynamicMenuStyle BackColor="#FFFBD6"></DynamicMenuStyle>
+
+               <DynamicSelectedStyle BackColor="#33CCFF"></DynamicSelectedStyle>
+               <Items>
+                   <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="New Item"></asp:MenuItem>
+                   <asp:MenuItem NavigateUrl="~/Dr. Consult.aspx" Text="Consult A Doctor" Value="Dr Consult"></asp:MenuItem>
+               </Items>
+
+
+               <StaticHoverStyle BackColor="Lime" ForeColor="White"></StaticHoverStyle>
+
+               <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></StaticMenuItemStyle>
+
+               <StaticSelectedStyle BackColor="#FFCC66"></StaticSelectedStyle>
+           </asp:Menu>
+           </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+
+            </asp:ContentPlaceHolder>
+        </div>
+        
+  
+    </form>
+      <hr /><hr />
+        <hr/>
+        <footer>
+           <center>
+
+            <p>&copy - Kratin Health Care</p>
+        </center>
+        </footer>
+   
+</body>
+</html>
